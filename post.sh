@@ -10,3 +10,5 @@ perl -pi -e 's( href="https://www.whitehouse.gov)( href=")g' $(find static/ -nam
 perl -pi -e 's(<div class="wp-block-whitehouse-header__search">)(<div class="wp-block-whitehouse-header__search" style="display:none;">)g' $(find static/ -name index.html)
 # disable newletter signup
 perl -pi -e 's(<input type="email")(<input disabled type="email")g' static/index.html
+# add gtag analytics
+GTAG=$(cat analytics.html) perl -pi -e 's/<head>\n/<head>$ENV{GTAG}\n/'  $(find static/ -name index.html)
