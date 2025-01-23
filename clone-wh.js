@@ -2,7 +2,7 @@ const { execFileSync } = require("node:child_process");
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const path = require("path");
-const domain = "https://www.whitehouse.gov/";
+const domain = "https://www.whitehouse.gov";
 const dloadPath = process.env.CASABLANCA_DLOAD_PATH;
 const staticPath = process.env.CASABLANCA_STATIC_PATH;
 
@@ -26,7 +26,7 @@ async function savePageContent(url) {
   }
   console.log(`Created dir: ${relPath}`);
   try {
-    const dstPath = `${relPath}/index.html`;
+    const dstPath = `${relPath}index.html`;
     fs.renameSync(dloadPath, dstPath);
     console.log(`Saved: ${dstPath}`);
   } catch (err) {
