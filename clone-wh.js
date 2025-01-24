@@ -13,7 +13,7 @@ function yieldToMain() {
 }
 
 async function savePageContent(url) {
-  execFileSync("./click-save.sh");
+  execFileSync("./save-page.sh");
   const fileExists = await waitForFile(dloadPath);
   if (!fileExists) {
     return console.error(`Error saving url: ${url}`);
