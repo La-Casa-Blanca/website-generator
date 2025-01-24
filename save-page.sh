@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 xdotool key alt+a
 
