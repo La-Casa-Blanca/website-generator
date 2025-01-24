@@ -1,5 +1,7 @@
 Cómo generar La-Casa-Blanca.org
 ----------------------------------
+[README English](/README.md).
+
 Clonar el repositorio de páginas de GH: https://github.com/La-Casa-Blanca/La-Casa-Blanca.github.io
 
 Establezca la ruta del proyecto en su ENV:
