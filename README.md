@@ -1,5 +1,7 @@
 How To Generate La-Casa-Blanca.org
 ----------------------------------
+[README Español](/README.es.md).
+
 Clone the GH pages repo: https://github.com/La-Casa-Blanca/La-Casa-Blanca.github.io
 
 Set the project path in your ENV:
